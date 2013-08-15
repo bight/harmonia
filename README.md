@@ -11,14 +11,15 @@ Harmonia turns any link to an MP3 or M4A file into a minimalist inline audio pla
 
 ## Description
 
-Harmonia turns any link to an MP3 or M4A file into a minimalist inline audio player using [jPlayer](http://jplayer.org).
+Inspired by the late-lamented [Delicious](http://del.icio.us/) Playtagger, Harmonia turns any link to an MP3 or M4A file into a minimalist inline audio player using [jPlayer](http://jplayer.org).
 
 * Tested in Chrome, Firefox, IE 8+, Safari and Mobile Safari (iPhone and iPad)
 * Uses HTML5 audio where available with Flash fallback
+* Zero configuration
 
 ## Installation
 
-Upload Harmonia to your plugins directory, activate it, and you're done.
+Download and unzip Harmonia, upload it to your plugins directory, activate the plugin, and you're good to go.
 
 ## Changelog
 
