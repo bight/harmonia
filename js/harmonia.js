@@ -1,11 +1,18 @@
-jQuery( document ).ready( function( $ ) {
-	$('a').each(function (i) {
+/**
+ * Harmonia
+ * Author: Ned Zimmerman
+ * Version: 1.0
+ * License: GPLv2 or later
+ */
+
+jQuery(document).ready( function($) {
+	$('a').each(function(i) {
 		if (this.href.match(/\.mp3$/i)||this.href.match(/\.m4a$/i)) {
 			var songID = i;
 			$(this).before('<div id="harmonia-player-'+songID+'" class="harmonia-player"></div><span id="harmonia-controller-'+songID+'" class="harmonia-controller"><a id="play"><i class="play"></i></a><a id="pause" style="display: none;"><i class="pause"></i></a></span>');
 		}
 	});
-	$('a#play').on("click", function( e ){
+	$('a#play').on("click", function(e){
 		e.preventDefault();
 		var songLink = $(this).parent('span').next('a').attr("href");
 		if (songLink.match(/\.mp3$/i)) {
@@ -18,7 +25,7 @@ jQuery( document ).ready( function( $ ) {
 			play: function( event ) { // To avoid both jPlayers playing together.
 				$(this).jPlayer("pauseOthers");
 			},
-			ready: function () {
+			ready: function() {
 				if ( songType === 'mp3' ) {
 					$(this).jPlayer("setMedia", {
 						mp3:songLink
