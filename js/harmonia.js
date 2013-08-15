@@ -12,7 +12,7 @@ jQuery(document).ready( function($) {
 			$(this).before('<div id="harmonia-player-'+songID+'" class="harmonia-player"></div><span id="harmonia-controller-'+songID+'" class="harmonia-controller"><a id="play"><i class="play"></i></a><a id="pause" style="display: none;"><i class="pause"></i></a></span>');
 		}
 	});
-	$('a#play').on("click", function(e){
+	$('a#play').bind("click", function(e){
 		e.preventDefault();
 		var songLink = $(this).parent('span').next('a').attr("href");
 		if (songLink.match(/\.mp3$/i)) {
