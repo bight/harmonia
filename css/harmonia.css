@@ -21,6 +21,7 @@
   padding: 0;
   border: none;
   outline: none;
+  cursor: pointer;
 }
 .harmonia-controller a i {
   display: inline-block;

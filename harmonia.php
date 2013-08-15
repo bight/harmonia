@@ -20,7 +20,7 @@ add_action( 'wp_enqueue_scripts', 'harmonia_enqueue_assets' );
 function harmonia_enqueue_assets() { ?>
 	<script type="text/javascript">var flashPath = '<?php echo HARMONIA_URL; ?>swf/';</script>
 	<?php wp_enqueue_script( 'jquery' );
-	wp_enqueue_script( 'jplayer-js', HARMONIA_URL .'js/jplayer.min.js', 'jquery', '2.2.0' );
+	wp_enqueue_script( 'jplayer-js', HARMONIA_URL .'js/jquery.jplayer.min.js', 'jquery', '2.4.0' );
 	wp_enqueue_script( 'harmonia-js', HARMONIA_URL .'js/harmonia.js', 'jquery', HARMONIA_VERSION );
 	wp_enqueue_style(  'harmonia-css', HARMONIA_URL .'css/harmonia.css', null, HARMONIA_VERSION );
 }

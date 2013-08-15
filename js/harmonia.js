@@ -2,12 +2,12 @@ jQuery( document ).ready( function( $ ) {
 	$('a').each(function (i) {
 		if (this.href.match(/\.mp3$/i)||this.href.match(/\.m4a$/i)) {
 			var songID = i;
-			$(this).before('<div id="harmonia-player-'+songID+'" class="harmonia-player"></div><span id="harmonia-controller-'+songID+'" class="harmonia-controller"><a href="javascript:;" id="play"><i class="play"></i></a><a href="javascript:;" id="pause" style="display: none;"><i class="pause"></i></a></span>');
+			$(this).before('<div id="harmonia-player-'+songID+'" class="harmonia-player"></div><span id="harmonia-controller-'+songID+'" class="harmonia-controller"><a id="play"><i class="play"></i></a><a id="pause" style="display: none;"><i class="pause"></i></a></span>');
 		}
 	});
-	$('a#play').on("click", function( event ){
+	$('a#play').on("click", function( e ){
+		e.preventDefault();
 		var songLink = $(this).parent('span').next('a').attr("href");
-		var songType = 'mp3';
 		if (songLink.match(/\.mp3$/i)) {
 			songType = 'mp3';
 		} else if (songLink.match(/\.m4a$/i)) {
