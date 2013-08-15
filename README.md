@@ -1,11 +1,11 @@
 # Harmonia
 
-Contributors: greatislander
-Tags: aac, audio, m4a, mp3, multimedia
-Requires at least: 3.0
-Tested up to: 3.6
-Stable tag: 1.0
-License: GPLv2 or later
+Contributors: greatislander  
+Tags: aac, audio, m4a, mp3, multimedia  
+Requires at least: 3.0  
+Tested up to: 3.6  
+Stable tag: 1.0  
+License: GPLv2 or later  
 
 Harmonia turns any link to an MP3 or M4A file into a minimalist inline audio player.
 
