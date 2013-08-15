@@ -1,4 +1,5 @@
 === Harmonia ===
+
 Contributors: greatislander
 Tags: aac, audio, m4a, mp3, multimedia
 Requires at least: 3.0
@@ -22,4 +23,5 @@ Upload Harmonia to your plugins directory, activate it, and you're done.
 == Changelog ==
 
 = 1.0 =
+
 * Initial release
