@@ -14,6 +14,9 @@ Inspired by the late-lamented [Delicious](http://del.icio.us/) Playtagger, Harmo
 
 * Tested in Chrome, Firefox, IE 8+, Safari and Mobile Safari (iPhone and iPad)
 * Uses HTML5 audio where available with Flash fallback
+* Zero configuration
+
+The code herein was initially developed for the fine folks at [Said the Gramophone](http://saidthegramophone.com/).
 
 == Installation ==
 

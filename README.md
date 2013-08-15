@@ -17,6 +17,8 @@ Inspired by the late-lamented [Delicious](http://del.icio.us/) Playtagger, Harmo
 * Uses HTML5 audio where available with Flash fallback
 * Zero configuration
 
+The code herein was initially developed for the fine folks at [Said the Gramophone](http://saidthegramophone.com/).
+
 ## Installation
 
 Download and unzip Harmonia, upload it to your plugins directory, activate the plugin, and you're good to go.
