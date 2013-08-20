@@ -22,7 +22,13 @@
 }
 
 .harmonia-player {
-	display: none;
+	display: inline-block;
+	width: 0;
+	height: 0;
+}
+
+.harmonia-player object {
+	margin-bottom: 0 !important;
 }
 
 .harmonia-controller {
