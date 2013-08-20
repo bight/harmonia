@@ -1,14 +1,14 @@
 <?php
 /**
  * @package Harmonia
- * @version 1.0
+ * @version 1.0.1
  */
 /*
 Plugin Name: Harmonia
 Plugin URI: http://wordpress.org/plugins/harmonia/
 Description: Harmonia turns any link to an MP3 or M4A file into a minimalist inline audio player.
 Author: Ned Zimmerman
-Version: 1.0
+Version: 1.0.1
 Author URI: http://bight.ca/
 License: GPLv2 or later
 */
@@ -29,7 +29,7 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
-define( 'HARMONIA_VERSION', 1 );
+define( 'HARMONIA_VERSION', '1.0.1' );
 define( 'HARMONIA_URL', plugin_dir_url( __FILE__ ));
 
 add_action( 'wp_enqueue_scripts', 'harmonia_enqueue_assets' );
