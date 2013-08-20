@@ -25,7 +25,7 @@ Download and unzip Harmonia, upload it to your plugins directory, activate the p
 
 == Changelog ==
 
-= 1.01 =
+= 1.0.1 =
 * Removed line break before player
 * Added donation link
 
