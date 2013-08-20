@@ -21,6 +21,10 @@
     font-style: normal;
 }
 
+.harmonia-player {
+	display: none;
+}
+
 .harmonia-controller {
   margin: 0 0.2em 0 0;
   padding: 0;
