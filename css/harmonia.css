@@ -1,7 +1,7 @@
 /**
  * Harmonia
  * Author: Ned Zimmerman
- * Version: 1.0.2
+ * Version: 1.0.3
  * License: GPLv2 or later
  */
 
