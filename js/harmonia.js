@@ -9,21 +9,30 @@ jQuery(document).ready( function($) {
 	$('a').each(function(i) {
 		if (this.href.match(/\.mp3$/i)||this.href.match(/\.m4a$/i)) {
 			var songID = i;
-			$(this).before('<div id="harmonia-player-'+songID+'" class="harmonia-player"></div><span id="harmonia-controller-'+songID+'" class="harmonia-controller"><a id="play"><i class="play"></i></a><a id="pause" style="display: none;"><i class="pause"></i></a></span>');
+			$(this).prepend('<span class="icon play"></span>');
+			$(this).before('<div id="harmonia-player-'+songID+'" class="harmonia-player"></div>');
+			$(this).wrap('<span id="harmonia-controller-'+songID+'" class="harmonia-controller"></span>');
+			$(this).attr('id', 'play');
 		}
 	});
 	$('a#play').bind("click", function(e){
 		e.preventDefault();
-		var songLink = $(this).parent('span').next('a').attr("href");
+		var songLink = $(this).attr("href");
 		if (songLink.match(/\.mp3$/i)) {
 			songType = 'mp3';
 		} else if (songLink.match(/\.m4a$/i)) {
 			songType = 'm4a';
 		}
-		var controllerAncestor = $(this).parent('span').attr("id");
+		var controllerAncestor = $(this).parent('span').attr('id');
 		$(this).parent('span').prev('div').jPlayer({
-			play: function( event ) { // To avoid both jPlayers playing together.
-				$(this).jPlayer("pauseOthers");
+			play: function( event ) {
+				$(this).next('span').children('a').attr('id','pause');
+				$(this).next('span').children('a').children('span.icon').removeClass('play').addClass('pause');
+				$(this).jPlayer("pauseOthers"); // To avoid both jPlayers playing together.
+			},
+			pause: function( event ) {
+				$(this).next('span').children('a').attr('id','play');
+				$(this).next('span').children('a').children('span.icon').removeClass('pause').addClass('play');
 			},
 			ready: function() {
 				if ( songType === 'mp3' ) {
@@ -36,6 +45,7 @@ jQuery(document).ready( function($) {
 					});
 				}
 				$(this).jPlayer("play");
+				
 			},
 			cssSelectorAncestor: '#'+controllerAncestor,
 			cssSelector: {

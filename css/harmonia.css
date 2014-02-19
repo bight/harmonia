@@ -31,18 +31,7 @@
 	margin-bottom: 0 !important;
 }
 
-.harmonia-controller {
-  margin: 0 0.2em 0 0;
-  padding: 0;
-}
-.harmonia-controller a {
-  margin: 0;
-  padding: 0;
-  border: none;
-  outline: none;
-  cursor: pointer;
-}
-.harmonia-controller a i {
+span.icon {
   display: inline-block;
   width: 16px;
   height: 16px;
@@ -55,9 +44,9 @@
   font-style: normal;
   vertical-align: middle;
 }
-.harmonia-controller a i.pause:before {
+span.icon.pause:before {
   content: '\f448';
 }
-.harmonia-controller a i.play:before {
+span.icon.play:before {
   content: '\f452';
 }
